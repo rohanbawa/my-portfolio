@@ -23,8 +23,8 @@ export default function Home() {
         </p>
         <div className="flex gap-4">
           <a href="https://github.com/rohanbawa" target="_blank" className="p-2 hover:text-gray-600 dark:hover:text-gray-300 transition"><Github /></a>
-          <a href="https://linkedin.com" target="_blank" className="p-2 hover:text-blue-500 transition"><Linkedin /></a>
-          <a href="mailto:hello@example.com" className="p-2 hover:text-red-500 transition"><Mail /></a>
+          <a href="https://www.linkedin.com/in/rohan-bawa27/" target="_blank" className="p-2 hover:text-blue-500 transition"><Linkedin /></a>
+          <a href="mailto:rohanbawa1998@gmail.com" className="p-2 hover:text-red-500 transition"><Mail /></a>
         </div>
       </Section>
 
