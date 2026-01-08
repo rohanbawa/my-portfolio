@@ -39,6 +39,7 @@ export default function Home() {
                 <span className="text-xs font-normal border border-gray-300 dark:border-gray-700 px-2 py-1 rounded-full">2024</span>
               </h4>
               <p className="text-gray-600 dark:text-gray-400 text-sm mb-4">
+                {/* To-DO : Update the projects*/}
                 A brief description of the project goes here. It uses Next.js and Tailwind to achieve high performance.
               </p>
               <div className="flex gap-2 text-xs text-gray-500">
@@ -56,6 +57,7 @@ export default function Home() {
         <div className="space-y-8">
           <div>
             <div className="flex justify-between items-baseline mb-2">
+              {/** TO-DO : update the experience section */}
               <h4 className="text-lg font-medium">Senior Developer</h4>
               <span className="text-sm text-gray-500">2022 — Present</span>
             </div>
@@ -70,6 +72,8 @@ export default function Home() {
           </div>
         </div>
       </Section>
+
+      {/** TO-DO : Add a navbar to navigate easily between sections */}
 
       {/* Footer */}
       <footer className="pt-20 pb-10 text-center text-sm text-gray-500">
