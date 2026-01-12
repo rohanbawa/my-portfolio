@@ -7,11 +7,13 @@ interface SectionProps {
   children: ReactNode;
   className?: string;
   delay?: number;
+  id?: string;
 }
 
-export default function Section({ children, className = "", delay = 0 }: SectionProps) {
+export default function Section({ children, className = "", delay = 0,id="" }: SectionProps) {
   return (
-    <motion.div
+    <motion.section
+      id={id}
       initial={{ opacity: 0, y: 30 }}
       whileInView={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.6, delay: delay, ease: "easeOut" }}
@@ -19,6 +21,6 @@ export default function Section({ children, className = "", delay = 0 }: Section
       className={className}
     >
       {children}
-    </motion.div>
+    </motion.section>
   );
 }
