@@ -3,21 +3,50 @@
 @tailwind utilities;
 
 :root {
+  /* Vercel Light Mode */
   --background: #ffffff;
-  --foreground: #09090b;
+  --foreground: #000000;
+  --accents-1: #fafafa;
+  --accents-2: #eaeaea; /* Light borders */
+  --accents-3: #999999;
+  --accents-4: #888888;
+  --accents-5: #666666;
+  --accents-6: #444444;
+  
+  /* Vercel Blue */
+  --vercel-blue: #0070f3;
+  --vercel-pink: #ff0080;
+  --vercel-cyan: #50e3c2;
 }
 
 .dark {
-  --background: #09090b;
+  /* Vercel Dark Mode (Pure Black) */
+  --background: #000000; 
   --foreground: #ffffff;
+  --accents-1: #111111;
+  --accents-2: #333333; /* Dark borders */
+  --accents-3: #444444;
+  --accents-4: #666666;
+  --accents-5: #888888;
+  --accents-6: #999999;
 }
 
+/* Global Reset */
 html {
   scroll-behavior: smooth;
+  scroll-padding-top: 80px;
 }
 
 body {
   color: var(--foreground);
   background: var(--background);
-  transition: background-color 0.3s ease, color 0.3s ease;
+  font-family: var(--font-inter), sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Vercel-style Selection (Highlight) */
+::selection {
+  background-color: var(--vercel-blue);
+  color: white;
 }
