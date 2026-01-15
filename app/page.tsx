@@ -62,15 +62,16 @@ export default function Home() {
       {/* HEADER */}
       <nav className="fixed top-0 left-0 right-0 z-50 w-full border-b border-gray-200 dark:border-gray-200/10 bg-white/80 dark:bg-black/80 backdrop-blur-md">
         <div className="max-w-4xl mx-auto px-6 md:px-12 h-16 flex justify-between items-center">
-          <a href="#" className="text-xl font-bold tracking-tight hover:text-blue-500 transition-colors">
+          <a href="" className="text-xl font-bold tracking-tight hover:text-blue-500 transition-colors">
             Rohan Bawa
           </a>
 
           <div className="flex items-center gap-6">
             <div className="hidden md:flex gap-6 text-sm font-medium text-gray-500 dark:text-gray-400">
-              <a href="#skills" className="hover:text-black dark:hover:text-white transition-colors">Skills</a>
-              <a href="#projects" className="hover:text-black dark:hover:text-white transition-colors">Projects</a>
               <a href="#experience" className="hover:text-black dark:hover:text-white transition-colors">Experience</a>
+              <a href="#projects" className="hover:text-black dark:hover:text-white transition-colors">Projects</a>
+              <a href="#skills" className="hover:text-black dark:hover:text-white transition-colors">Skills</a>
+
               <a 
                 href="https://drive.google.com/file/d/YOUR_ACTUAL_RESUME_ID/view?usp=sharing" 
                 target="_blank" 
@@ -82,9 +83,9 @@ export default function Home() {
             </div>
             <div className="w-px h-6 bg-gray-200 dark:bg-gray-800 hidden md:block"></div>
             <div className="flex items-center gap-4">
-              <a href="https://github.com/rohanbawa" target="_blank" className="text-gray-500 hover:text-black dark:hover:text-white transition-colors"><Github size={20} /></a>
-              <a href="https://linkedin.com/in/rohan-bawa27" target="_blank" className="text-gray-500 hover:text-blue-500 transition-colors"><Linkedin size={20} /></a>
-              <a href="mailto:rohanbawa1998@gmail.com" className="text-gray-500 hover:text-red-500 transition-colors"><Mail size={20} /></a>
+              <a href="https://github.com/rohanbawa" target="_blank" className="text-gray-500 hover:text-black dark:hover:text-white transition-colors"><Github size={30} /></a>
+              <a href="https://linkedin.com/in/rohan-bawa27" target="_blank" className="text-gray-500 hover:text-blue-500 transition-colors"><Linkedin size={30} /></a>
+              <a href="mailto:rohanbawa1998@gmail.com" className="text-gray-500 hover:text-red-500 transition-colors"><Mail size={30} /></a>
               <ThemeToggle />
             </div>
           </div>
@@ -111,7 +112,7 @@ export default function Home() {
               <a href="#projects" className="px-6 py-2 bg-black text-white dark:bg-white dark:text-black font-medium rounded-full hover:opacity-80 transition-opacity">
                 View Work
               </a>
-              <a href="mailto:hello@example.com" className="px-6 py-2 border border-gray-200 dark:border-gray-800 font-medium rounded-full hover:bg-gray-100 dark:hover:bg-gray-800 transition-colors">
+              <a href="mailto:rohanbawa1998@gmail.com" className="px-6 py-2 border border-gray-200 dark:border-gray-800 font-medium rounded-full hover:bg-gray-100 dark:hover:bg-gray-800 transition-colors">
                 Contact Me
               </a>
             </div>
@@ -125,7 +126,7 @@ export default function Home() {
             
             {/* Capgemini */}
             <div className="relative">
-              <div className="absolute -left-[37px] top-1.5 w-4 h-4 rounded-full border border-white dark:border-black bg-gray-200 dark:bg-gray-800"></div>
+              <div className="absolute -left-[40px] top-1.5 w-4 h-4 rounded-full border border-white dark:border-black bg-gray-200 dark:bg-gray-800"></div>
               <div className="flex flex-col sm:flex-row justify-between sm:items-baseline mb-1">
                 <h4 className="text-lg font-semibold text-black dark:text-white">Software Engineer</h4>
                 <span className="text-sm font-mono text-gray-500">Feb 2020 — Aug 2023</span>
@@ -135,14 +136,14 @@ export default function Home() {
               <ul className="space-y-2 text-sm text-gray-600 dark:text-gray-400 leading-relaxed">
                 <li><strong className="text-black dark:text-white">High-Scale Engineering:</strong> Designed and deployed 11+ Spring Boot microservices on AWS, optimizing architecture to cut API latency by 10%.</li>
                 <li><strong className="text-black dark:text-white">Critical Impact:</strong> Slash system downtime by 30% by diagnosing and resolving core database bottlenecks and integration failures.</li>
-                <li><strong className="text-black dark:text-white">Leadership:</strong> Directed a 5-person engineering team through Agile sprints, successfully delivering 10+ production-ready features.</li>
+                <li><strong className="text-black dark:text-white">Leadership:</strong> Directed a 5-person engineering-interns through Agile sprints, successfully delivering 10+ production-ready features.</li>
                 <li><strong className="text-black dark:text-white">DevOps:</strong> Built the CI/CD pipeline from scratch using Jenkins to automate deployments for a high-traffic portal.</li>
               </ul>
             </div>
 
             {/* Mitu */}
             <div className="relative">
-              <div className="absolute -left-[37px] top-1.5 w-4 h-4 rounded-full border border-white dark:border-black bg-gray-200 dark:bg-gray-800"></div>
+              <div className="absolute -left-[40px] top-1.5 w-4 h-4 rounded-full border border-white dark:border-black bg-gray-200 dark:bg-gray-800"></div>
               <div className="flex flex-col sm:flex-row justify-between sm:items-baseline mb-1">
                 <h4 className="text-lg font-semibold text-black dark:text-white">Software Engineering Intern (Big Data)</h4>
                 <span className="text-sm font-mono text-gray-500">Jun 2019 — Jan 2020</span>
@@ -161,7 +162,7 @@ export default function Home() {
 
         {/* PROJECTS */}
         <Section id="projects" delay={0.1}>
-          <h3 className="text-xl font-bold mb-8 tracking-tight">Selected Projects</h3>
+          <h3 className="text-xl font-bold mb-8 tracking-tight">Projects</h3>
           <motion.div 
             className="grid grid-cols-1 md:grid-cols-2 gap-6"
             variants={containerVariants}
